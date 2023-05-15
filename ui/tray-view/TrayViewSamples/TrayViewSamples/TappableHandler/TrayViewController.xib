@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrayViewController" customModule="TrayViewSamples" customModuleProvider="target">
+            <connections>
+                <outlet property="handleView" destination="B7A-fs-E2x" id="sS1-9g-YuV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7A-fs-E2x" userLabel="HandleView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="handle-icon" translatesAutoresizingMaskIntoConstraints="NO" id="aFo-Dr-YPH">
+                            <rect key="frame" x="0.0" y="2" width="375" height="46"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="aFo-Dr-YPH" firstAttribute="leading" secondItem="B7A-fs-E2x" secondAttribute="leading" id="5Sv-BS-JCW"/>
+                        <constraint firstItem="aFo-Dr-YPH" firstAttribute="centerY" secondItem="B7A-fs-E2x" secondAttribute="centerY" id="Lz5-JJ-FRg"/>
+                        <constraint firstAttribute="trailing" secondItem="aFo-Dr-YPH" secondAttribute="trailing" id="TqL-gr-ebl"/>
+                        <constraint firstAttribute="height" constant="50" id="aDy-dX-hik"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uf3-KM-gQx">
+                    <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="maA-PB-WI3">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AIR JORDAN 1 HIGH OG BLACK SATIN" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNb-Fs-zMt" userLabel="Product Name">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <color key="backgroundColor" red="0.7843137255" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3b-W1-0fS" userLabel="Buy">
+                                    <rect key="frame" x="0.0" y="114.5" width="375" height="99.5"/>
+                                    <color key="backgroundColor" red="0.7843137255" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="BUY"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLORS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wga-1D-dza">
+                                    <rect key="frame" x="0.0" y="229" width="375" height="99"/>
+                                    <color key="backgroundColor" red="0.7843137255" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="red | blue ... | white" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3K-nn-dxf" userLabel="Color vaules">
+                                    <rect key="frame" x="0.0" y="343" width="375" height="99.5"/>
+                                    <color key="backgroundColor" red="0.7843137255" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIZES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNe-AE-naH">
+                                    <rect key="frame" x="0.0" y="457.5" width="375" height="99.5"/>
+                                    <color key="backgroundColor" red="0.7843137255" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 | 4 | 5 | 6 | .. | 14" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOX-aR-5qT" userLabel="sizes values">
+                                    <rect key="frame" x="0.0" y="572" width="375" height="99.5"/>
+                                    <color key="backgroundColor" red="0.7843137255" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DETAILS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUf-fd-ogo" userLabel="DETAILS">
+                                    <rect key="frame" x="0.0" y="686.5" width="375" height="99"/>
+                                    <color key="backgroundColor" red="0.7843137255" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xwx-md-oeR" userLabel="Description">
+                                    <rect key="frame" x="0.0" y="800.5" width="375" height="99.5"/>
+                                    <color key="backgroundColor" red="0.7843137255" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <string key="text">Dressed in a Black Gym Red and White color scheme. The shoe features a Black upper constructed with a mix of satin leather and reflective materials. Red accents are used on the tongue label Wings logo and laces to give off a Bred vibe. A White midsole atop a Black rubber outsole completes the design.
+</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="900" id="kjL-a6-qfO"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="maA-PB-WI3" firstAttribute="top" secondItem="uf3-KM-gQx" secondAttribute="top" id="2fi-Y9-axz"/>
+                        <constraint firstItem="maA-PB-WI3" firstAttribute="width" secondItem="obg-EV-IrC" secondAttribute="width" id="AoF-F9-9bj"/>
+                        <constraint firstAttribute="bottom" secondItem="maA-PB-WI3" secondAttribute="bottom" id="cIe-TB-K3e"/>
+                        <constraint firstItem="maA-PB-WI3" firstAttribute="leading" secondItem="uf3-KM-gQx" secondAttribute="leading" id="ruj-NE-Eb0"/>
+                        <constraint firstAttribute="trailing" secondItem="maA-PB-WI3" secondAttribute="trailing" id="sY6-d1-QqX"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="Xc2-8N-7Ux"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="obg-EV-IrC"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.18039215689999999" green="0.90196078430000004" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uf3-KM-gQx" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="0ru-Wa-WZW"/>
+                <constraint firstItem="B7A-fs-E2x" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="DxD-VJ-t60"/>
+                <constraint firstItem="uf3-KM-gQx" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="J2F-Cm-AOy"/>
+                <constraint firstItem="B7A-fs-E2x" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ROs-qh-lEp"/>
+                <constraint firstItem="uf3-KM-gQx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hrs-bD-7nq"/>
+                <constraint firstItem="B7A-fs-E2x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iXp-QW-GhJ"/>
+                <constraint firstItem="uf3-KM-gQx" firstAttribute="top" secondItem="B7A-fs-E2x" secondAttribute="bottom" id="yWF-di-2CK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="86.806596701649184"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="handle-icon" width="135" height="46"/>
+    </resources>
+</document>

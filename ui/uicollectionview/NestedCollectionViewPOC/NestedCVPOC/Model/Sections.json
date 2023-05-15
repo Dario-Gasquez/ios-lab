@@ -1,0 +1,86 @@
+[
+    {
+        "type": "ranking",
+        "title": "Top Letters",
+        "items": [
+            {
+                "name": "A"
+            },
+            {
+                "name": "B"
+            },
+            {
+                "name": "C"
+            },
+            {
+                "name": "D"
+            },
+            {
+                "name": "E"
+            }
+        ]
+    },
+    {
+        "type": "ranking",
+        "title": "Top Numbers",
+        "items": [
+            {
+                "name": "One"
+            },
+            {
+                "name": "Two"
+            },
+            {
+                "name": "Three"
+            },
+            {
+                "name": "Four"
+            }
+        ]
+    },
+    {
+        "type": "result",
+        "title": "Astronomy For You",
+        "items": [
+            {
+                "imageFilename": "astronomy-1"
+            },
+            {
+                "imageFilename": "astronomy-2"
+            },
+            {
+                "imageFilename": "astronomy-3"
+            },
+            {
+                "imageFilename": "astronomy-4"
+            },
+            {
+                "imageFilename": "astronomy-5"
+            },
+            {
+                "imageFilename": "astronomy-6"
+            },
+            {
+                "imageFilename": "astronomy-7"
+            },
+            {
+                "imageFilename": "astronomy-8"
+            },
+            {
+                "imageFilename": "astronomy-9"
+            },
+            {
+                "imageFilename": "astronomy-10"
+            },
+            {
+                "imageFilename": "astronomy-11"
+            },
+            {
+                "imageFilename": "astronomy-12"
+            },
+            {
+                "imageFilename": "astronomy-13"
+            }
+        ]
+    }
+]
