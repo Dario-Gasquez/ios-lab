@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Opus",
+        "repositoryURL": "https://github.com/alta/swift-opus",
+        "state": {
+          "branch": "main",
+          "revision": "49a16407a6f6d2e2c9057f5bdb154eb9d9964a25",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
